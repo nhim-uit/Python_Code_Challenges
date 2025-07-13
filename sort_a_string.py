@@ -5,7 +5,12 @@
 # my solution
 def solve(s: str):
     s = s.split()
-    return sorted(s, key=lambda x: x.lower()[0])
+    return ' '.join(sorted(s, key=lambda x: x.lower()[0]))
 
 
-print(solve('mango ORANGE apple pearl corn'))
+# instructor's solution
+def solve2(s):
+    return ' '.join(sorted(s.split(), key=str.casefold))
+
+
+print(solve2('mango ORANGE apple pearl corn'))
