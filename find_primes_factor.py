@@ -35,5 +35,21 @@ def solve(n):
     return res
 
 
-print(solve(630))
-print(solve(13))
+# solution solve2 by Barron Stone
+def solve2(n):
+    factors = list()
+    divisor = 2
+    while (divisor <= n):
+        if n % divisor == 0:
+            factors.append(divisor)
+            n //= divisor
+        else:
+            divisor += 1
+        # print(divisor)
+    return factors
+
+
+# print(solve2(630))
+# print(solve2(13))
+print(solve2(5040))
+print(solve(5040))
