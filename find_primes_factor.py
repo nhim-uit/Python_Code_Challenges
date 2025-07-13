@@ -1,3 +1,8 @@
+# Linked Learning - Python Code Challenges
+# 14 Jul, 2025
+# Find prime factors
+# Created by me (Alex M)
+
 def is_prime(n):
     for i in range(2, n):
         if n % i == 0:
@@ -25,10 +30,10 @@ def solve(n):
             if n % i == 0:
                 res.append(i)
                 n //= i
-                print(n)
+                # print(n)
 
     return res
 
 
-
 print(solve(630))
+print(solve(13))
