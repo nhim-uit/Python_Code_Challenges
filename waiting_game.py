@@ -1,6 +1,7 @@
 # Linked Learning - Python Code Challenges
 # 20 Jul, 2025
 # Waiting game
+
 import random
 import time
 
