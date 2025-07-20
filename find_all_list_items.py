@@ -15,4 +15,4 @@ def solve(ls, key):
     return res
 
 
-print(solve([[[1, 2, 3], 2, [1, 3]], [1, 2, 3]], 2))
+print(solve([[[1, 2, 3], 2, [1, 3]], [1, 2, 3]], 3))
