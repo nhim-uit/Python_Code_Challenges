@@ -22,3 +22,16 @@ def run(message):
 target_time = datetime.datetime.now() + datetime.timedelta(seconds=5)
 schedule_function(target_time, run, 'Hello, World!')
 
+
+# instructor's solution:
+import sched
+
+
+def schedule_function2(event_time, function, *args):
+    s = sched.scheduler(time.time, time.sleep)
+    s.enterabs(event_time, 1, function, argument=args)
+    print(f'{function.__name__}() scheduled for {time.asctime(time.localtime(event_time))}')
+    s.run()
+
+
+schedule_function2(time.time() + 1, print, 'Howdy!')
