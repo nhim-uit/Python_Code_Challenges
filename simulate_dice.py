@@ -1,6 +1,7 @@
 # Linked Learning - Python Code Challenges
 # 22 Jul, 2025
 # simulate a dice
+
 import random
 import matplotlib.pyplot as plt
 
